@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin >> t;
+	
+	while(t--)
+	{
+	    long long int n;
+	    cin >> n;
+	    long long int sum = 0;
+	    sum = (n/4) * 44;
+	    int modu = n%4;
+	    
+	    if(n >= 4){
+	        
+	        if(modu == 0)
+	            sum = sum + 16;
+	        else if(modu == 1)
+	            sum = sum + 32;
+	        else if(modu == 2)
+	            sum = sum + 44;
+	        else if(modu == 3)
+	            sum = sum + 55;
+	        
+	        cout << sum << endl;     
+	    }
+	    else{
+	        int res;
+	        if(modu == 1)
+	            res = 20;
+	        else if(modu == 2)
+	            res = 36;
+	        else if(modu == 3)
+	            res = 51;
+	            
+	        cout << res << endl;
+	    }
+	}
+	return 0;
+}
+
+
+//This is solution to Ques 4...
