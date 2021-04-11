@@ -1,0 +1,43 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		int t;
+		t = sc.nextInt();
+		
+		float a,b,c,v;
+		
+		final double speed = 9.58f;
+		
+		while(t-->0){
+		    a = sc.nextFloat();
+		    b = sc.nextFloat();
+		    c = sc.nextFloat();
+		    v = sc.nextFloat();
+		    float temp = a*b*c*v;
+		    float res = 100/temp;
+		    double result = (double)Math.round(res*100)/100;
+		    if(result<speed){
+		        System.out.println("Yes");
+		    }
+		    else if(result == speed){
+		        System.out.println("No");
+		    }
+		    else{
+		        System.out.println("No");
+		    }
+		}
+	}
+}
+
+
+//This is solution to the Ques 2...
