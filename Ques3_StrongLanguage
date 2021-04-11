@@ -1,0 +1,47 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception{
+    
+    Scanner sc = new Scanner (System.in);
+    int t;
+    t = sc.nextInt();
+
+    while (t-->0){
+	int k, n;
+	k = sc.nextInt ();
+	n = sc.nextInt ();
+	String s;
+	s = sc.next();
+	char a[] = {};
+	a = s.toCharArray();
+	int count=0;
+    int max=0;
+	for (int j = 0; j < a.length; j++){
+	    if (a[j] == '*'){
+	        count++;
+	        if(count>=max){
+	            max=count;
+	        }
+	        }
+	        else{
+		count=0;
+	   }
+	  }
+	  if(max>=n){
+	      System.out.println ("Yes");
+	  }
+	  else{
+	      System.out.println ("No");
+	  }
+      }
+	}
+}
+
+//This is solutio to Ques 3...
